@@ -17,7 +17,11 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.sakshamgoel1107.NativeChat"
+      "package": "com.sakshamgoel1107.NativeChat",
+      "associatedDomains": [
+        "applinks:lucky-mutt-4.clerk.accounts.dev",
+        "webcredentials:lucky-mutt-4.clerk.accounts.dev"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -37,7 +41,11 @@
       ],
       "expo-secure-store",
       "expo-web-browser",
-      "expo-build-properties"
+      ["expo-build-properties",{
+        "android":{
+          "deploymentTarget":"13.0"
+        }
+      }]
     ],
     "experiments": {
       "typedRoutes": true
